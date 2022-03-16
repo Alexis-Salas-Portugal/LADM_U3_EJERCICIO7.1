@@ -30,6 +30,7 @@ class Lienzo(este:MainActivity): View(este)
         c.drawColor(Color.BLACK)
         for(circ in circulos)
         {
+            //pipo pipo pipo
             circ.mover()
             circ.pintar(c)
         }
