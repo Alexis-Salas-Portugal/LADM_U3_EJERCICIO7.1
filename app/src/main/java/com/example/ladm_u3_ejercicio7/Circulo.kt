@@ -7,19 +7,19 @@ import java.lang.Math.random
 import kotlin.math.roundToInt
 import kotlin.random.Random
 
-class Circulo (l: Lienzo)
+class Circulo (l: Lienzo,X:Float,Y:Float)
 {
     val l=l
-    var X=0f
-    var Y=0f
+    var X=X
+    var Y=Y
     var movx=0f
     var movy=0f
     var color= Color.BLACK
 
     init
     {
-        X=(l.height+20).toFloat()
-        Y=(l.height+20).toFloat()
+        this.X=(l.height+20).toFloat()
+        this.Y=(l.height+20).toFloat()
         movx=rand(6)+2
         movy=rand(6)+2
         color=Color.rgb((random()*255).roundToInt(), (random()*255).roundToInt(), (random()*255).roundToInt())
